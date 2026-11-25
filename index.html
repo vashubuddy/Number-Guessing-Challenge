@@ -1,0 +1,107 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Number Guessing Challenge</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>🎯 Number Guessing Challenge</h1>
+
+        <p class="description">
+            Guess the secret number and test your intelligence!
+        </p>
+
+        <div class="game-box">
+
+            <h2>Welcome Player!</h2>
+
+    <div class="difficulty">
+
+    <h3>Select Difficulty</h3>
+
+    <select id="difficulty">
+        <option value="easy">Easy</option>
+        <option value="medium" selected>Medium</option>
+        <option value="hard">Hard</option>
+    </select>
+
+    </div>
+
+            <p>
+                Computer has selected a secret number.
+                Can you guess it?
+            </p>
+
+            <p class="rules">
+                Number Range: 1 - 100
+            </p>
+
+            <p class="rules">
+                Total Attempts: 7
+            </p>
+
+            <button id="startBtn">Start Game</button>
+
+<!-- YAHAN SE NAYA CODE ADD KARO -->
+
+<div id="gameScreen" style="display: none;">
+
+    <h2>Guess the Number!</h2>
+
+    <p>Enter a number between 1 and 100</p>
+
+    <input type="number" id="guessInput"
+           placeholder="Enter your guess">
+
+    <button id="submitBtn">Submit Guess</button>
+
+    <p id="message"></p>
+
+    <p>Attempts Left: <span id="attempts">7</span></p>
+
+<p>
+    Attempts Used:
+    <span id="used">0</span>
+</p>
+
+<div id="resultScreen" style="display: none;">
+
+    <h2 id="resultTitle"></h2>
+
+    <p id="finalNumber"></p>
+
+    <p id="finalScore"></p>
+    <p id="bestScore"></p>
+
+    <p id="finalAttempts"></p>
+
+    <button id="playAgainBtn">Play Again</button>
+
+</div>
+
+
+</div>
+
+<!-- NAYA CODE YAHAN KHATAM -->
+
+</div>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
+
